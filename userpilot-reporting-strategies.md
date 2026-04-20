@@ -1,47 +1,46 @@
 # Userpilot Reporting Strategies for Paywall Integration
 
-This guide outlines the specific reports you should create in the Userpilot dashboard to identify upsell opportunities and analyze content demand.
+This guide outlines how to build reports in Userpilot to identify account-level upgrade opportunities among your logged-in users.
 
-## 1. The "Upsell Candidate" Report (Account-Based)
-**Goal**: Identify which companies have the highest number of staff members hitting the paywall.
+## 1. Top Account Upgrade Opportunities (Company Level)
+**Goal**: Identify which client companies have the highest frequency of staff members hitting the paywall.
 - **Event**: `paywall_hit`
-- **Metric**: Unique Users
-- **Group By**: `company.name` (or `organisation`)
-- **Action**: Use this as your primary list for the Sales team. Any company with high unique user counts is a prime candidate for a "site-wide" or "tier-up" subscription.
+- **Metric**: Unique Users (to see how many *people* in the company are affected).
+- **Group By**: `organisation` or `company.name`.
+- **Action**: Sort by the highest number of unique users. These are your "hottest" upsell candidates.
 
-## 2. The "Hot Content" Report (Content Performance)
-**Goal**: Identify which specific articles or content sections are driving the most paywall friction.
+## 2. Content Demand by Client Type
+**Goal**: Understand which content topics are most popular with your current subscribers (and where they are hitting limits).
 - **Event**: `paywall_hit`
-- **Metric**: Total Occurrences
-- **Group By**: `nid` (Node ID) or `url`
-- **Action**: Use this to understand what your most valuable "premium" content is. This helps in marketing and determining what content should remain behind the paywall.
+- **Metric**: Total Occurrences.
+- **Group By**: `nid` or `title` (Page Title).
+- **Action**: Identify content clusters (e.g., "Tax Law" articles) that are consistently triggering paywall hits for active clients.
 
-## 3. High-Intent Individual Leads
-**Goal**: Identify specific users who are hitting the paywall repeatedly (indicating high frustration or high need).
+## 3. High-Frequency Individual Leads
+**Goal**: Identify specific "Power Users" within a client account who are outgrowing their plan.
 - **Event**: `paywall_hit`
-- **Metric**: Total Occurrences
-- **Filter**: `is_logged_in: true`
-- **Group By**: `email`
-- **Action**: Identify "Power Users" who are limited by their current plan. These individuals can often become internal champions for an upgrade within their company.
+- **Metric**: Total Occurrences.
+- **Group By**: `email`.
+- **Action**: These users can be targeted for a trial of a higher tier or used as internal advocates for a company-wide upgrade.
 
-## 4. Market Demand Analysis (Anonymous Users)
-**Goal**: Measure how much external (non-customer) traffic is interested in your locked content.
+## 4. Paywall Friction Velocity (Time-Series)
+**Goal**: Measure if the "pain" of the paywall is increasing for your customer base over time.
 - **Event**: `paywall_hit`
-- **Metric**: Unique Users
-- **Filter**: `is_logged_in: false`
-- **Action**: This quantifies the "shadow demand." If anonymous hits are spiking, it indicates a successful external marketing campaign or a trending topic that you should be capturing via lead-gen forms.
+- **Chart Type**: Line Chart (Grouped by Day/Week).
+- **Action**: Spikes in this chart after a major product launch or regulatory change indicate that your content has become more essential, making it a great time for a price or tier adjustment.
 
-## 5. Paywall Friction Trend (Weekly Velocity)
-**Goal**: Determine if paywall hits are increasing over time.
-- **Event**: `paywall_hit`
-- **Chart Type**: Line Chart (Time Series)
-- **Action**: If you see a steady increase in hits, it suggests your content is becoming more essential to users' daily workflows, strengthening the case for a price increase or tier restructuring.
+---
+
+## Future Reporting (Once Anonymous Tracking is Enabled)
+Once the "All Pages" initiation is enabled in GTM, you can also run:
+- **Market Demand Report**: Filter by `is_logged_in: false` to see hits from prospects.
+- **Conversion Pathing**: See which anonymous users eventually sign up after hitting a paywall.
 
 ## Summary of Event Properties for Filtering:
 | Property | Use Case |
 | :--- | :--- |
-| `organisation` | Grouping users by their employer. |
+| `organisation` | Grouping users by their employer (Company). |
 | `email` | Identifying the specific lead for contact. |
 | `nid` | Mapping hits back to specific Drupal content. |
-| `is_logged_in` | Separating current customers from prospects. |
-| `url` | Identifying which site sections (e.g., /news vs /tax) are most popular. |
+| `title` | Human-readable article name. |
+| `url` | Identifying which site sections are most popular. |
