@@ -1,0 +1,165 @@
+{
+    "basePath": "/",
+    "pathPrefix": "",
+    "setHasJsCookie": 0,
+    "ajaxPageState": {
+        "theme": "blackfinckley",
+        "theme_token": "H5zW-8lVwH35jfONngOSq6LvY_ziQCG6VcgRUU50StA",
+        "js": {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "sites/all/themes/bootstrap/js/bootstrap.js": 1,
+            "sites/all/modules/contrib/jquery_update/replace/jquery/1.10/jquery.min.js": 1,
+            "misc/jquery-extend-3.4.0.js": 1,
+            "misc/jquery-html-prefilter-3.5.0-backport.js": 1,
+            "misc/jquery.once.js": 1,
+            "misc/drupal.js": 1,
+            "sites/all/modules/contrib/eu_cookie_compliance/js/jquery.cookie-1.4.1.min.js": 1,
+            "sites/all/modules/custom/croner_frontend/js/croner_frontend.js": 1,
+            "sites/all/modules/custom/croner_frontend/js/iframe_size_airtool.js": 1,
+            "sites/all/modules/custom/croner_frontend/js/iframe_scroll_to_top.js": 1,
+            "sites/all/modules/custom/croner_frontend/js/iframe_modal_status.js": 1,
+            "sites/all/modules/custom/croner_frontend/js/iframe_click.js": 1,
+            "sites/all/modules/custom/croner_frontend/js/iframe_parent_link.js": 1,
+            "sites/all/modules/custom/croner_user_analytics/js/inject_userpilot.js": 1,
+            "sites/all/modules/contrib/environment_indicator/tinycon.min.js": 1,
+            "sites/all/modules/contrib/environment_indicator/environment_indicator.js": 1,
+            "sites/all/modules/contrib/environment_indicator/color.js": 1,
+            "sites/all/modules/custom/fft_marketo/js/marketo_values.js": 1,
+            "sites/all/modules/contrib/marketo_ma/js/marketo_ma.js": 1,
+            "sites/all/libraries/annotator/annotator-full.min.js": 1,
+            "sites/all/modules/contrib/annotator/js/annotator.js": 1,
+            "sites/all/modules/contrib/annotation/js/annotator_store.js": 1,
+            "sites/all/libraries/annotator.touch/annotator.touch.min.js": 1,
+            "sites/all/modules/features/croner_annotations/js/annotator_touch.js": 1,
+            "sites/all/libraries/annotator.categories/categories.js": 1,
+            "sites/all/modules/features/croner_annotations/js/annotator_categories.js": 1,
+            "sites/all/modules/features/croner_customised_policies/js/upload_default_logo_modal.js": 1,
+            "sites/all/modules/features/croner_customised_policies/js/navcare_logo_bulk_upload.js": 1,
+            "sites/all/modules/features/croner_customised_policies/js/navcare_rename_folder.js": 1,
+            "sites/all/modules/features/croner_customised_policies/js/navcare_share_reading_list.js": 1,
+            "sites/all/modules/custom/gtm_search/js/algolia_instant_search.js": 1,
+            "sites/all/modules/custom/wk_gtm/js/ajax_actions.js": 1,
+            "sites/all/modules/custom/croner_salary_search/js/salary_search.js": 1,
+            "sites/all/modules/contrib/better_statistics/js/fields/core.js": 1,
+            "sites/all/modules/custom/fft_bootstrap_paragraphs/js/bp.js": 1,
+            "sites/all/themes/blackfriars/js/url_sanitise_app.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/affix.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/alert.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/button.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/carousel.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/collapse.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/dropdown.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/modal.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/tooltip.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/popover.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/scrollspy.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/tab.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/transition.js": 1,
+            "sites/all/themes/blackfriars/js/bootstrap-switch.min.js": 1,
+            "sites/all/themes/blackfriars/js/blackfriars.js": 1,
+            "sites/all/themes/blackfriars/js/eu_cookie_compliance_overrides.js": 1,
+            "sites/all/themes/blackfinckley/js/blackfinckley.js": 1,
+            "sites/all/themes/blackfinckley/js/accessibility.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_helpers.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_megamenu.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_custom_policy.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_carousel.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_folder.js": 1,
+            "sites/all/themes/blackfinckley/js/navcare_storage.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_my_customised_policies.js": 1,
+            "sites/all/themes/blackfinckley/js/nav_care_main_page.js": 1
+        },
+        "css": {
+            "0": 1,
+            "modules/system/system.base.css": 1,
+            "sites/all/modules/custom/croner_content/croner_content.css": 1,
+            "sites/all/modules/contrib/environment_indicator/environment_indicator.css": 1,
+            "modules/field/theme/field.css": 1,
+            "modules/node/node.css": 1,
+            "sites/all/modules/contrib/video_filter/video_filter.css": 1,
+            "sites/all/modules/contrib/views/css/views.css": 1,
+            "sites/all/libraries/annotator/annotator.min.css": 1,
+            "sites/all/libraries/annotator.touch/annotator.touch.css": 1,
+            "sites/all/modules/contrib/ctools/css/ctools.css": 1,
+            "sites/all/modules/contrib/addtoany/addtoany.css": 1,
+            "sites/all/modules/custom/fft_bootstrap_paragraphs/css/bp.css": 1,
+            "sites/all/themes/blackfinckley/css/blackfinckley.web.cdn.css": 1,
+            "sites/all/themes/blackfriars/css/style.css": 1,
+            "sites/all/themes/blackfriars/css/bootstrap-switch.min.css": 1
+        }
+    },
+    "annotator": {
+        "element": "body.page-node .region-content"
+    },
+    "annotator_store": {
+        "prefix": "/annotation/api",
+        "showViewPermissionsCheckbox": false,
+        "showEditPermissionsCheckbox": false,
+        "urls": {
+            "create": "/annotations",
+            "read": "/annotations/:id",
+            "update": "/annotations/:id",
+            "destroy": "/annotations/:id",
+            "search": "/search"
+        }
+    },
+    "croner_annotations": {
+        "categories": {
+            "1": "Yellow",
+            "2": "Green",
+            "3": "Blue",
+            "4": "Purple",
+            "5": "Pink",
+            "6": "Orange"
+        }
+    },
+    "better_exposed_filters": {
+        "views": {
+            "products": {
+                "displays": {
+                    "block_1": {
+                        "filters": []
+                    }
+                }
+            }
+        },
+        "datepicker_options": {
+            "dateFormat": "\"dd/mm/yy\""
+        }
+    },
+    "croner_user_analytics": {
+        "email": "liam.delahunty@croneri.co.uk",
+        "organisation": null,
+        "token": "NX-ba0fbc19"
+    },
+    "bootstrap": {
+        "anchorsFix": "0",
+        "anchorsSmoothScrolling": "0",
+        "formHasError": 1,
+        "popoverEnabled": 1,
+        "popoverOptions": {
+            "animation": 1,
+            "html": 0,
+            "placement": "right",
+            "selector": "",
+            "trigger": "click",
+            "triggerAutoclose": 1,
+            "title": "",
+            "content": "",
+            "delay": 0,
+            "container": "body"
+        },
+        "tooltipEnabled": 1,
+        "tooltipOptions": {
+            "animation": 1,
+            "html": 0,
+            "placement": "auto left",
+            "selector": "",
+            "trigger": "hover focus",
+            "delay": 0,
+            "container": "body"
+        }
+    }
+}

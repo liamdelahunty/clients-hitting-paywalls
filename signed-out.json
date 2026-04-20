@@ -1,0 +1,242 @@
+{
+    "urlIsAjaxTrusted": {},
+    "basePath": "/",
+    "pathPrefix": "",
+    "setHasJsCookie": 0,
+    "autocomplete_limit": {
+        "limit": "2"
+    },
+    "ajaxPageState": {
+        "theme": "cchonline",
+        "theme_token": "6tKWTqZWmZc9vjwaFemCArXjJiDP0wW3CEbTF7qdCxg",
+        "jquery_version": "1.9",
+        "js": {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "3": 1,
+            "sites/all/modules/custom/cchonline_structure/js/content-explorer.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/research.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/quick-saved-searches.js": 1,
+            "sites/all/modules/custom/fft_saved_searches/js/saved-search.js": 1,
+            "sites/all/themes/bootstrap/js/bootstrap.js": 1,
+            "sites/all/modules/contrib/jquery_update/replace/jquery/1.9/jquery.min.js": 1,
+            "misc/jquery-extend-3.4.0.js": 1,
+            "misc/jquery-html-prefilter-3.5.0-backport.js": 1,
+            "misc/jquery.once.js": 1,
+            "misc/drupal.js": 1,
+            "sites/all/modules/contrib/jquery_update/replace/ui/external/jquery.cookie.js": 1,
+            "misc/ajax.js": 1,
+            "sites/all/modules/contrib/jquery_update/js/jquery_update.js": 1,
+            "sites/all/modules/custom/fft_marketo/js/marketo_values.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/algolia_conversion_event_sender.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/algolia_conversion_events.js": 1,
+            "sites/cchonline/modules/custom/cchonline_user_analytics/js/inject_userpilot.js": 1,
+            "sites/all/modules/contrib/environment_indicator/tinycon.min.js": 1,
+            "sites/all/modules/contrib/environment_indicator/environment_indicator.js": 1,
+            "sites/all/modules/contrib/environment_indicator/color.js": 1,
+            "sites/all/modules/contrib/marketo_ma/js/marketo_ma.js": 1,
+            "sites/all/libraries/vue/vue.min.js": 1,
+            "sites/all/libraries/fixed-sticky/fixedsticky.js": 1,
+            "sites/all/modules/features/cchonline_practice_areas/js/practice-areas-menu.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/ie-missing.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/json2.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/jquery.cookie.js": 1,
+            "//cdn.jsdelivr.net/algoliasearch/3.22/algoliasearch.min.js": 1,
+            "//cdn.jsdelivr.net/algoliasearch.helper/2.28/algoliasearch.helper.min.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/search_utils.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/truncate.js": 1,
+            "sites/all/modules/custom/cchonline_search/js/jquery.highlight.js": 1,
+            "sites/all/modules/custom/cchonline_access/js/paywall.js": 1,
+            "sites/all/modules/custom/cchonline_access/js/book_demo.js": 1,
+            "sites/all/libraries/hogan.js/web/builds/3.0.2/hogan-3.0.2.min.js": 1,
+            "sites/all/libraries/history.js/scripts/bundled/html4+html5/jquery.history.js": 1,
+            "sites/all/modules/custom/gtm_search/js/algolia_instant_search.js": 1,
+            "sites/all/modules/custom/wk_gtm/js/ajax_actions.js": 1,
+            "sites/all/modules/hacked/better_statistics/js/fields/core.js": 1,
+            "sites/all/themes/bootstrap/js/misc/_progress.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/affix.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/alert.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/button.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/carousel.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/collapse.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/dropdown.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/modal.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/tooltip.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/popover.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/scrollspy.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/tab.js": 1,
+            "sites/all/themes/blackfriars/bootstrap/assets/javascripts/bootstrap/transition.js": 1,
+            "sites/all/themes/blackfriars/js/bootstrap-switch.min.js": 1,
+            "sites/all/themes/blackfriars/js/blackfriars.js": 1,
+            "sites/all/themes/cchonline/js/accessibility.js": 1,
+            "sites/all/themes/cchonline/js/url_sanitise_library.js": 1,
+            "sites/all/themes/cchonline/js/ux.js": 1,
+            "sites/all/themes/cchonline/js/kingston.js": 1,
+            "sites/all/themes/cchonline/js/modernizr.custom.js": 1,
+            "sites/all/themes/cchonline/js/encrypted_redirect.js": 1,
+            "sites/all/themes/cchonline/js/filter-term-list.js": 1,
+            "sites/all/themes/cchonline/js/eu_cookie_compliance_overrides.js": 1,
+            "sites/all/themes/cchonline/js/wistia_custom.js": 1,
+            "sites/all/themes/cchonline/js/blue_navbar.js": 1,
+            "sites/all/themes/cchonline/js/react.js": 1,
+            "sites/all/themes/cchonline/js/tax-treaty.js": 1,
+            "sites/all/themes/bootstrap/js/misc/ajax.js": 1
+        },
+        "css": {
+            "0": 1,
+            "1": 1,
+            "2": 1,
+            "modules/system/system.base.css": 1,
+            "sites/all/modules/custom/cchonline_smartforms/css/cchonline_smartforms.css": 1,
+            "sites/all/modules/contrib/environment_indicator/environment_indicator.css": 1,
+            "modules/field/theme/field.css": 1,
+            "modules/node/node.css": 1,
+            "sites/all/modules/contrib/video_filter/video_filter.css": 1,
+            "sites/all/modules/contrib/views/css/views.css": 1,
+            "sites/all/libraries/fixed-sticky/fixedsticky.css": 1,
+            "sites/all/modules/contrib/ctools/css/ctools.css": 1,
+            "sites/all/themes/blackfriars/css/style.css": 1,
+            "sites/all/themes/blackfriars/css/bootstrap-switch.min.css": 1,
+            "sites/all/themes/cchonline/css/styles.css": 1
+        }
+    },
+    "is_paywall": false,
+    "cchonline_practice_areas": {
+        "pa_titles": []
+    },
+    "cchonline_search": {
+        "index_data": {
+            "cchonline_current": {
+                "index": "cchonline_prod_current",
+                "application_id": "Z46TECGG6M",
+                "searchable_attributes": [
+                    "search_number",
+                    "unordered(search_title)",
+                    "unordered(title)",
+                    "unordered(body)",
+                    "unordered(breadcrumb)",
+                    "unordered(nid)",
+                    "unordered(metadata.regions)"
+                ]
+            },
+            "cchonline_hmrc": {
+                "index": "cchonline_prod_hmrc",
+                "application_id": "Z46TECGG6M",
+                "searchable_attributes": [
+                    "search_number",
+                    "unordered(search_title)",
+                    "unordered(title)",
+                    "unordered(body)",
+                    "unordered(breadcrumb)",
+                    "unordered(nid)"
+                ]
+            },
+            "cchonline_news": {
+                "index": "cchonline_prod_news",
+                "application_id": "Z46TECGG6M",
+                "searchable_attributes": [
+                    "search_number",
+                    "unordered(search_title)",
+                    "unordered(title)",
+                    "unordered(body)",
+                    "unordered(breadcrumb)"
+                ]
+            },
+            "cchonline_redgreen": {
+                "index": "cchonline_prod_redgreen",
+                "application_id": "Z46TECGG6M",
+                "searchable_attributes": [
+                    "search_number",
+                    "unordered(search_title)",
+                    "unordered(title)",
+                    "unordered(body)",
+                    "unordered(breadcrumb)"
+                ]
+            },
+            "cchonline_suggestions": {
+                "index": "cchonline_prod_search_suggestions",
+                "application_id": "Z46TECGG6M",
+                "searchable_attributes": ""
+            },
+            "algolia_wk_topics": {
+                "index": "cchonline_prod_topics",
+                "application_id": "Z46TECGG6M",
+                "searchable_attributes": ""
+            }
+        },
+        "results_div_id": "instant-search-results",
+        "algolia_sap_filter": "(UP/BTR-II5,UP/CCHBETA-II15,UP/ACMAG-II6,UP/STT-II9,UP/BIT-II5,UP/TRT-II9,UP/BMTGAAT-II14,UP/BMTG-II9,UP/ETC-II5,UP/PEM-II13,UP/BTC-II5,UP/CCTD-II12,UP/CCT-II8,UP/BNIC-II5,UP/PAYR-II8,UP/WDJ-II5,UP/HIN-II5,UP/BSEX1-II5,UP/CSFB-II8,UP/CFM-II5,UP/BTG-II5,UP/CEL-II8,UP/EQUL-II11,UP/P11D-II5,UP/PCAM-II13,UP/PCTM-II5,UP/PIM-II13,UP/SDLT-II6,UP/TDI-II5,UP/BVG-II5,UP/BVR-II5,UP/VATTA-II5,UP/RVT-II5,UP/CGTTA-II5,UP/CTTA-II5,UP/IHTTA-II5,UP/ITTA-II6,UP/NICTA-II5,UP/CBF-II5,UP/KSPR-II9,UP/PMPM-II5,UP/DPB-II5,UP/PAAP-II5,UP/PCAS-II5,UP/CMP-II5,UP/KMAD-II13,UP/KRSC-II13,UP/GVL-II14,UP/EVLS-II14,UP/EVLP-II14,UP/IHTTA-II6,UP/TOP-II5,SAP1,UP/TLS-II9,UP/ACAD-II11,UP/ACMAG-II11,UP/ACMAGS-II12,UP/ACM-II5,UP/ACS-II5,UP/ACSAAT-II14,UP/ADIFRS-II11,UP/ADI-II5,UP/AIG-II5,UP/APPGAAT-II14,UP/APPG-II5,UP/AUS-II5,UP/CAIG-II5,UP/CCTBP-II12,UP/CCTCA-II12,UP/CCTCGT-II12,UP/CCTC-II12,CCTEA-II12,UP/CCTE-II12,UP/CCTIHT-II12,UP/CCTII-II12,UP/CCTPT-II12,UP/CCTSDLT-II12,UP/CCTTOC-II12,UP/CCTC-II13,UP/CCTTPC-II13,UP/CCTTOC-II13,UP/CCTV-I112,UP/CHAR-II8,UP/CHBP-II8,UP/CHTC-II8,UP/CHZC-II8,UP/CIG-II5,UP/CLN-II5,UP/CLNAAT-II14,UP/CNTM--II12,UP/COL-II8,UP/COLAAT-II14,UP/CTTV-II11,UP/CTTE-II11,UP/DENT-II8,UP/FDSI-II8,UP/FI-II14,UP/FREM-II6,UP/GAGLA-II13,UP/HELP-II8,UP/IDNUKG-II13,UP/IECTR-II6,UP/IMPG-II5,UP/INIG-II5,UP/IRMA-II5,UP/IRMCA-II13,UP/IRME-II13,UP/IRMIHT-II13,UP/IRM-II8,UP/ITO-II5,UP/ITX-II5,UP/MAC-II13,UP/MOD9-II5,UP/MONLAUN-II7,UP/PALLP-II11,UP/PAR-II7,UP/PCAAT-II14,UP/PCA-II5,UP/PCHA-II5,UP/PIFRS-II13,UP/PIG-II5,UP/PMAF-II11,UP/PPSS-II5,UP/PPSSU9-II15,UP/PWCCA-II7,UP/REIG-II5,UP/VP-II5,UP/S2031-II5,UP/SIFRS-II11,UP/SIG-II5,UP/TECM-II13,UP/TG-II14,UP/TPCA-II8,UP/TPO-II5,UP/VPAAT-II14,UP/WAGCC-II8,UP/WBTG-II8,BNIC-II5,UP/CCSORP-II5,UP/DGAAPA-II15,UP/DGAAPB-II15,UP/DGAAPC-II15,UP/DGAAPD-II15,UP/DGLMFS-II15,UP/DIGAAPB-II15,UP/DIGAAPC-II15,UP/DIGAPA-II15,UP/DIG-II5,UP/EISA-II9,UP/FSIFRS-II11,UP/GAAPUK-II11,UP/IASFR-II11,UP/CCTEA-II12,UP/PFRS-II14,UP/BSEX-1-II5,UP/CLNAAT-II5,UP/PPSSU9-II5,UP/IAST-II5,UP/ICADC-II9,UP/CNTM-II12,UP/WDJAAT-II14,UP/TAX-II10,debug,UP/DGUMFS-II15,UP/NICADC-II13,RUSSELLTEST1,UP/TAX-II15,UP/TAX-II15-TEST,UP/PCAAAT-II14,UP/WTRAC-II15,UP/WTT-II15,UP/WTRAI-II15,UP/WTRALT-II15,UP/PESC-II15,UP/VAT-II16,UP/DGAAPE-II16,UP/GTPLUK-II15,UP/DGAAPF-II16,UP/DIGAAPD-II16,UP/CBUS-II16,UP/PFRS101-II16,UP/GTW -II15,UP/GTW-II15,UP/ILATUK-II15,UP/GDTNUK-II15,UP/BEPS-II16,UP/BEPS-II17,UP/CRCIO-II16,UP/NAVGAAP-II14,UP/BTG1-II17,UP/BVG1-II17,UP/PEM1-II17,UP/PGCA-II17001,UP/IITA-II6,UP/TAXATT-II17,UP/TAXCIOT-II17,UP/TAXCIOTATT-II17,UP/PGCA-II17,UP/PGCA-II16,UP/S2035-II5,UP/ETCAAT-II17,UP/PGAC-II16,UP/ROSS-II17,UP/ROSS-BI16001,UP/CGTPR-II17,UP/PPBM-II17,UP/BMTG-II14,UP/EQUL-II8,UP/PPBM-II5,UP/CCTV-II12,UP/EFHL-II18,UP/FTL-II18,UP/GPT-II18,UP/GDA-II18,UP/WFPT-II18,TEST,UP/QOVAT-II18,UP/GCABE-II18,UP/IDNUK-II13,UP/PFRS101-II6,UP/CRPA-II13,UP/CRPACDUN-II13,UP/CRPC-II13,UP/CRPFR-II13,UP/CRPF-II13,UP/CRP-II13,UP/CRPSME-II13,UP/CRPSME5-II14,UP/CRIPW-II13,UP/AA-II18,UP/CADC-II5,User priv admin,UP/RCIS-II18,UP/NTC-II18,UP/NTE-II18,UP/NTB-II18,UP/NTOMB-II18,UP/DESS-II18,marketing,UP/ROSS-II8,UP/PITP-II18,UP/CIBE-II17,UP/TB-II19,UP/KES-II19,UP/CIIT-II17,UP/BTG1-II5,UP/DGAAPE-II15,UP/DGAAPF-II15,UP/CIPT-II19,UP/CHIPT-II19,UP/GTS-II19,AAA,UP/KSP-II19,UP/FPR-II19,UP/GTA-II19,UP/LE-II19,multiconcurrency,UP/CVFS-II19,UP/IHTTA-II16,UP/PIM-113,UP/CPI-II19,UP/NA-II19,UP/NACHAR-II19,UP/NASC-II19,UP/NAPS-II19,UP/NACLUB-II19,UP/NAACAD-II19,UP/NAPC-II19,Product visibility control,UP/PFRS-II13,Product reindex,UP/GCLWA-II20,Product search archive,UP/NTCORP-II20,UP/DAL-II19,UP/HTP-II20,UP/WTSRL-II20,UP/PROB-II20,UP/PDRLC-II20,UP/IRM-II20,UP/BVG-II17,UP/TRADELITE,UP/ESSENTIALSLITE,UP/CTC30-SV14,UP/PIHT-II21,UP/NACC-II21,UP/NACCUKG-II21,UP/NACCPC-II21,UP/NACCCHAR-II21,UP/NACCIFRS-II21,UP/NACCSC-II21,UP/NACCME-II21,UP/NACCPCLG-II21,UP/NACCLLP-II21,UP/ACMAGGW-II19,UP/TD-II21,UP/PSDLT-II21,UP/GS36N-II21,UP/PTCAM-II21,UP/TW-II21,UP/AAW-II21,UP/MSR-II21,UP/TW-II22,UP/AAW-II22,UP/PEOT-II22,UP/ACMAGS_II12,UP/WCC-II22,UP/PTA-II22,UP/POF-II23,UP/PF-II23,UP/NITWTT-II23,UP/NIT-II23,UP/NITIB-II23,UP/NITIBP-II23,UP/NITBEPS-II23,UP/NITV-II23,UP/NITTP-II23,UP/NPM-II23,UP/NIT1-II23,UP/NIT2-II23,UP/NIT3-II23,UP/NIT4-II23,UP/NIT5-II23,UP/NIT6-II23,UP/NIT7-II23,UP/NIT8-II23,UP/NIT10-II23,UP/NIT11-II23,UP/NIT12-II23,UP/NIT13-II23,UP/NIT14-II23,UP/NIT15-II23,UP/NIT16-II23,UP/NIT17-II23,UP/NIT18-II23,UP/NIT19-II23,UP/NIT20-II23,UP/NIT21-II23,UP/NIT22-II23,UP/NIT23-II23,UP/NIT24-II23,UP/NIT25-II23,UP/NIT26-II23,UP/NIT27-II23,UP/NIT28-II23,UP/NIT29-II23,UP/NIT30-II23,UP/NIT31-II23,UP/NIT32-II23,UP/NIT33-II23,UP/NIT34-II23,UP/NIT35-II23,UP/NIT36-II23,UP/NIT37-II23,UP/NIT38-II23,UP/NI39-II23,UP/NIT39-II23,UP/NIT40-II23,UP/NIT41-II23,UP/NIT42-II23,UP/NIT43-II23,UP/NIT44-II23,UP/NIT45-II23,UP/NIT46-II23,UP/NIT47-II23,UP/NIT48-II23,UP/NIT49-II23,UP/NIT50-II23,UP/NIT51-II23,UP/NIT52-II23,UP/NIT53-II23,UP/NIT54-II23,UP/NIT55-II23,UP/NIT56-II23,UP/NIT57-II23,UP/NIT58-II23,UP/NIT59-II23,UP/NIT60-II23,UP/NIT61-II23,UP/NIT62-II23,UP/NIT63-II23,UP/NIT64-II23,UP/NIT65-II23,UP/NIT66-II23,UP/NIT67-II23,UP/NIT68-II23,UP/NIT69-II23,UP/NIT70-II23,UP/NIT71-II23,UP/NIT72-II23,UP/NIT73-II23,UP/NIT74-II23,UP/NIT75-II23,UP/NIT76-II23,UP/NIT77-II23,UP/NIT78-II23,UP/NIT79-II23,UP/NIT80-II23,UP/NIT81-II23,UP/NIT82-II23,UP/NIT83-II23,UP/NIT84-II23,UP/NIT85-II23,UP/NIT86-II23,UP/NIT87-II23,UP/NIT88-II23,UP/NIT89-II23,UP/NIT90-II23,UP/NIT91-II23,UP/NIT92-II23,UP/NIT93-II23,UP/NIT94-II23,UP/NIT95-II23,UP/NIT96-II23,UP/NIT97-II23,UP/NIT98-II23,UP/NIT99-II23,UP/NIT100-II23,UP/NIT101-II23,UP/NIT102-II23,UP/NIT103-II23,UP/NIT104-II23,UP/NIT105-II23,UP/NIT106-II23,UP/NIT107-II23,UP/NIT108-II23,UP/NIT109-II23,UP/NIT110-II23,UP/NIT111-II23,UP/NIT112-II23,UP/NIT113-II23,UP/NIT114-II23,UP/NIT115-II23,UP/NIT116-II23,UP/NS-II24,UP/ISS-II24,UP/NTCORP-II18,UP/MSR-II22,UP/DAILYFREE-II15,UP/NACCIFRSFSG-II25,UP/NTCORPP-II25,UP/STESP-II24,UP/MTDA-II25,UP/NCL-II25,UP/NOAI-II25,UP/NASS-II26,_filter_document)",
+        "search_tips": "Try broadening your search criteria.",
+        "search_new_window_text": "Toggle open in new window",
+        "max_depth": "13",
+        "news_archive_starting_level": "node_23526900 > node_24959339",
+        "case_finder_page_vars": {
+            "page_title": "",
+            "page_body": {
+                "value": "",
+                "format": "wysiwyg"
+            }
+        },
+        "redgreen_archive_starting_level": "node_23526900 > node_24959338",
+        "hmrc_archive_starting_level": "node_23526900 > node_24515203",
+        "profile": "minimal",
+        "user_token": "user-0"
+    },
+    "better_exposed_filters": {
+        "views": {
+            "feeds": {
+                "displays": {
+                    "block_1": {
+                        "filters": []
+                    }
+                }
+            }
+        },
+        "datepicker_options": {
+            "dateFormat": "\"dd/mm/yy\""
+        }
+    },
+    "showing_book_demo_modal": false,
+    "cchonline": {
+        "nid": 0,
+        "favourites_token": "rcfYMs7Q0JC9VNqHyesn9EzOlWVsew8bB88YScHgxH0",
+        "favourites": [],
+        "uid": "0",
+        "uuid": false,
+        "email": ""
+    },
+    "cchonline_annotations": {
+        "sharing_disabled": false
+    },
+    "bootstrap": {
+        "anchorsFix": "0",
+        "anchorsSmoothScrolling": "0",
+        "formHasError": 1,
+        "popoverEnabled": 1,
+        "popoverOptions": {
+            "animation": 1,
+            "html": 0,
+            "placement": "right",
+            "selector": "",
+            "trigger": "click",
+            "triggerAutoclose": 1,
+            "title": "",
+            "content": "",
+            "delay": 0,
+            "container": "body"
+        },
+        "tooltipEnabled": 1,
+        "tooltipOptions": {
+            "animation": 1,
+            "html": 0,
+            "placement": "auto left",
+            "selector": "",
+            "trigger": "hover focus",
+            "delay": 0,
+            "container": "body"
+        }
+    }
+}
+
+

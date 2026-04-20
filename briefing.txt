@@ -1,0 +1,17 @@
+I need to intergrate userpilot with a paywall.
+
+The paywall is triggered when non logged in users hit a page that is behind a paywall. It can also be triggered for logged in users that try to access data that is outside of thier current subscription.
+
+The aim is to get the data of users who are at the limit of their subscription so we can genereate a report for the users' company showing that their staff are trying to access content outside of their subscription so they should upgrade.
+
+We need to use userpilot.tracked for events (I think that's the )
+
+The application is written in Drupal, we have a Drupal.settings object.
+
+We will impliment this via Google Tag Manager, therefore the JavaScript has to be be ECMASCRIPT5 (EC5)
+
+I have uploaded the signed in and signed out javascript objects in this directory.
+
+Please keep a text log of all work and the next steps.
+
+
