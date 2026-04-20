@@ -1,67 +1,80 @@
 /**
- * Userpilot Paywall Tracking Script (ES5) - TEST VERSION
+ * Userpilot Paywall Tracking Script (ES5) - TEST VERSION (Cross-Subdomain Compatible)
  * Implementation for Google Tag Manager (GTM)
  *
- * This version includes console.log statements for debugging.
+ * This version includes console.log statements for debugging and supports
+ * multiple subdomain data structures (CCHOnline and Croner App).
  */
 (function() {
   'use strict';
   
-  console.log('Userpilot Paywall Tracker: Script initialized.');
+  console.log('Userpilot Paywall Tracker (Test): Script initialized.');
 
-  // Check if Drupal settings and the paywall flag are present
-  if (typeof Drupal !== 'undefined' && Drupal.settings) {
-    var settings = Drupal.settings;
-    
-    if (settings.is_paywall) {
-      console.log('Userpilot Paywall Tracker: Paywall detected (Drupal.settings.is_paywall === true).');
-      
-      // Ensure userpilot is available on the window object
-      var userpilot = window.userpilot;
-      if (!userpilot) {
-        console.warn('Userpilot Paywall Tracker: userpilot object not found on window.');
-      }
+  // 1. Basic Environment Check
+  if (typeof Drupal === 'undefined' || !Drupal.settings) {
+    console.warn('Userpilot Paywall Tracker (Test): Drupal or Drupal.settings not found.');
+    return;
+  }
 
-      // Determine if the user is logged in based on the UID
-      var uid = settings.cchonline ? settings.cchonline.uid : "0";
-      var isLoggedIn = uid !== "0" && uid !== 0 && uid !== "";
-      console.log('Userpilot Paywall Tracker: User logged in status:', isLoggedIn, '(UID: ' + uid + ')');
+  var s = Drupal.settings;
+  
+  // 2. Paywall Detection (Supporting multiple locations)
+  var isPaywall = s.is_paywall || (s.cchonline_access && s.cchonline_access.is_paywall);
+  
+  if (!isPaywall) {
+    console.log('Userpilot Paywall Tracker (Test): No paywall detected (checked s.is_paywall and s.cchonline_access.is_paywall).');
+    return;
+  }
 
-      // Prepare event properties
-      var eventProperties = {
-        nid: settings.cchonline ? settings.cchonline.nid : null,
-        is_logged_in: isLoggedIn,
-        url: window.location.href,
-        title: document.title
-      };
+  console.log('Userpilot Paywall Tracker (Test): Paywall detected!');
 
-      // If logged in, add user-specific data to help with company reporting
-      if (isLoggedIn) {
-        eventProperties.uid = uid;
-        eventProperties.email = settings.cchonline.email;
-        
-        // Extract organisation if available in the analytics settings
-        if (settings.cchonline_user_analytics && settings.cchonline_user_analytics.organisation) {
-          eventProperties.organisation = settings.cchonline_user_analytics.organisation;
-        }
-      }
+  // 3. User & Content Data Extraction (Supporting multiple subdomain structures)
+  var email = (s.cchonline && s.cchonline.email) || (s.croner_user_analytics && s.croner_user_analytics.email) || "";
+  var uid = (s.cchonline && s.cchonline.uid) || (s.croner_user_analytics && s.croner_user_analytics.uid) || "0";
+  var nid = (s.cchonline && s.cchonline.nid) || (s.croner_content && s.croner_content.nid) || null;
+  
+  var org = 'Unknown';
+  if (s.cchonline_user_analytics && s.cchonline_user_analytics.organisation) {
+    org = s.cchonline_user_analytics.organisation;
+  } else if (s.croner_user_analytics && s.croner_user_analytics.organisation) {
+    org = s.croner_user_analytics.organisation;
+  }
 
-      console.log('Userpilot Paywall Tracker: Event properties prepared:', eventProperties);
+  var isLoggedIn = (uid !== "0" && uid !== 0 && uid !== "" && email !== "");
+  
+  console.log('Userpilot Paywall Tracker (Test): Extracted Data:', {
+    detected_email: email,
+    detected_uid: uid,
+    detected_nid: nid,
+    detected_org: org,
+    is_logged_in: isLoggedIn
+  });
 
-      // Trigger the Userpilot track event
-      if (userpilot && typeof userpilot.track === 'function') {
-        console.log('Userpilot Paywall Tracker: Sending event via userpilot.track()...');
-        userpilot.track('paywall_hit', eventProperties);
-      } else if (userpilot && typeof userpilot.push === 'function') {
-        console.log('Userpilot Paywall Tracker: Sending event via userpilot.push()...');
-        userpilot.push(['track', 'paywall_hit', eventProperties]);
-      } else {
-        console.error('Userpilot Paywall Tracker: Could not find a valid Userpilot tracking method (track or push).');
-      }
-    } else {
-      console.log('Userpilot Paywall Tracker: No paywall detected on this page.');
-    }
+  // 4. Prepare Event Properties
+  var eventProperties = {
+    nid: nid,
+    is_logged_in: isLoggedIn,
+    url: window.location.href,
+    title: document.title,
+    email: email,
+    organisation: org
+  };
+
+  console.log('Userpilot Paywall Tracker (Test): Event properties prepared:', eventProperties);
+
+  // 5. Trigger Tracking
+  var userpilot = window.userpilot;
+  if (!userpilot) {
+    console.warn('Userpilot Paywall Tracker (Test): userpilot object not found on window. (Is the initiation tag working?)');
+  }
+
+  if (userpilot && typeof userpilot.track === 'function') {
+    console.log('Userpilot Paywall Tracker (Test): Sending event via userpilot.track()...');
+    userpilot.track('paywall_hit', eventProperties);
+  } else if (userpilot && typeof userpilot.push === 'function') {
+    console.log('Userpilot Paywall Tracker (Test): Sending event via userpilot.push()...');
+    userpilot.push(['track', 'paywall_hit', eventProperties]);
   } else {
-    console.log('Userpilot Paywall Tracker: Drupal or Drupal.settings not found.');
+    console.error('Userpilot Paywall Tracker (Test): No valid Userpilot tracking method (track/push) found.');
   }
 })();
