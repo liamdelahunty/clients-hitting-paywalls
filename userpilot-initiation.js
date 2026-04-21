@@ -2,6 +2,8 @@
  * Userpilot Initiation Script (ES5)
  * GTM Tag 1: Load Library
  * Trigger: All Pages
+ * 
+ * Note: Initialisation is now handled by the environment.
  */
 (function() {
   'use strict';

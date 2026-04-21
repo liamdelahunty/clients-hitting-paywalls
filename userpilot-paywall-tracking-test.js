@@ -8,7 +8,7 @@
 (function() {
   'use strict';
   
-  console.log('Userpilot Paywall Tracker (Test): Script initialized.');
+  console.log('Userpilot Paywall Tracker (Test): Script initialised.');
 
   // 1. Basic Environment Check
   if (typeof Drupal === 'undefined' || !Drupal.settings) {
@@ -51,29 +51,29 @@
   });
 
   // 4. Prepare Event Properties
-  var eventProperties = {
+  var eventProps = {
     nid: nid,
-    is_logged_in: isLoggedIn,
     url: window.location.href,
     title: document.title,
+    is_logged_in: isLoggedIn,
     email: email,
     organisation: org
   };
 
-  console.log('Userpilot Paywall Tracker (Test): Event properties prepared:', eventProperties);
+  console.log('Userpilot Paywall Tracker (Test): Event properties prepared:', eventProps);
 
   // 5. Trigger Tracking
   var userpilot = window.userpilot;
   if (!userpilot) {
-    console.warn('Userpilot Paywall Tracker (Test): userpilot object not found on window. (Is the initiation tag working?)');
+    console.warn('Userpilot Paywall Tracker (Test): userpilot object not found on window. (Is the initialisation tag working?)');
   }
 
   if (userpilot && typeof userpilot.track === 'function') {
     console.log('Userpilot Paywall Tracker (Test): Sending event via userpilot.track()...');
-    userpilot.track('paywall_hit', eventProperties);
+    userpilot.track('paywall_hit', eventProps);
   } else if (userpilot && typeof userpilot.push === 'function') {
     console.log('Userpilot Paywall Tracker (Test): Sending event via userpilot.push()...');
-    userpilot.push(['track', 'paywall_hit', eventProperties]);
+    userpilot.push(['track', 'paywall_hit', eventProps]);
   } else {
     console.error('Userpilot Paywall Tracker (Test): No valid Userpilot tracking method (track/push) found.');
   }

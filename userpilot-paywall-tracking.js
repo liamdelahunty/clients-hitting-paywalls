@@ -15,9 +15,9 @@
       var userpilot = window.userpilot;
       
       // Support multiple subdomain data structures for properties
+      var email = (s.cchonline && s.cchonline.email) || (s.croner_user_analytics && s.croner_user_analytics.email) || "";
       var uid = (s.cchonline && s.cchonline.uid) || (s.croner_user_analytics && s.croner_user_analytics.uid) || "0";
       var nid = (s.cchonline && s.cchonline.nid) || (s.croner_content && s.croner_content.nid) || null;
-      var email = (s.cchonline && s.cchonline.email) || (s.croner_user_analytics && s.croner_user_analytics.email) || "";
       
       var org = 'Unknown';
       if (s.cchonline_user_analytics && s.cchonline_user_analytics.organisation) {
@@ -26,11 +26,13 @@
         org = s.croner_user_analytics.organisation;
       }
 
+      var isLoggedIn = (uid !== "0" && uid !== 0 && uid !== "" && email !== "");
+
       var eventProps = {
         nid: nid,
         url: window.location.href,
         title: document.title,
-        is_logged_in: (uid !== "0" && uid !== 0 && uid !== ""),
+        is_logged_in: isLoggedIn,
         email: email,
         organisation: org
       };

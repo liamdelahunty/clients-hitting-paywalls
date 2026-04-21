@@ -1,9 +1,18 @@
 Work Log - Userpilot Paywall Integration
 
 Final Architecture:
-1. userpilot-initiation.js: SDK Loader (Tag 1).
-2. userpilot-identification.js: User/Company Mapper (Tag 2). Required to provide the 'Company' data for reports.
+1. Environment-level Initiation: Userpilot SDK loaded by environment.
+2. Environment-level Identification: User/Company identified by environment.
 3. userpilot-paywall-tracking.js: Event Recorder (Tag 3). Triggers on 'is_paywall: true'.
 
+Summary of Changes (21st April 2026):
+- Removed initiation and identification dependencies from tracking scripts (handled by environment).
+- Updated all comments and console logs to British English (e.g., 'initialised', 'organisation', 'initialisation').
+- Synchronised logic and variable names between 'userpilot-paywall-tracking.js' and 'userpilot-paywall-tracking-test.js'.
+- Improved 'is_logged_in' check to include email verification for robustness.
+
 All scripts are ES5 compatible for GTM and use Drupal.settings for data extraction.
-Next Step: Implementation in GTM via Custom HTML tags.
+
+Next Step:
+- Deploy updated scripts to GTM via Custom HTML tags.
+- Verify tracking in Userpilot using the 'userpilot-paywall-tracking-test.js' version first.

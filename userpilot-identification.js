@@ -2,6 +2,8 @@
  * Userpilot Identification Script (ES5)
  * GTM Tag 2: Identify User
  * Trigger: Window Loaded (All Pages)
+ * 
+ * Note: This is now handled by the environment.
  */
 (function() {
   'use strict';
