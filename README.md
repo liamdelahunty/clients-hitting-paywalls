@@ -16,9 +16,24 @@ To generate reports showing which companies are hitting their subscription limit
 
 ### Step 3: Create the Paywall Tracking Tag (Record the limit hit)
 - **Tag Type**: Custom HTML
-- **HTML**: Copy contents of `userpilot-paywall-tracking.js`
+- **HTML**: Copy contents of `userpilot-paywall-tracking-v2.js` (or `userpilot-paywall-tracking-v2-test.js` for testing).
 - **Trigger**: **Window Loaded**.
 - **Tag Sequencing**: Set this to fire **after** Step 1.
+
+---
+
+## Event Properties Reference (v2)
+
+The `paywall_hit` event now includes the following properties for granular reporting:
+
+| Property | Description |
+| :--- | :--- |
+| `primary_section` | High-level area (e.g., Tax, HR, Audit) derived from Drupal settings. |
+| `breadcrumb` | The page's navigation path (supports DOM fallback). |
+| `is_paywall` | Explicit boolean flag for easy filtering. |
+| `nid` | Drupal Content ID for mapping to specific articles. |
+| `organisation` | The user's company (for account-level reports). |
+| `is_logged_in` | Boolean to distinguish between leads and customers. |
 
 ---
 
